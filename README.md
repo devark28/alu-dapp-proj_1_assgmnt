@@ -1,10 +1,7 @@
 # Protecting the ALU Logo on Ethereum
 
-Two parts of one project on digital assets:
-
 | Folder | Content |
 |---|---|
-| [q1_exchange_exploration/](q1_exchange_exploration/README.md) | exploring a cryptocurrency exchange: account verification, payment methods, orders, transaction records and security features |
 | [q2_alu_logo_registry/](q2_alu_logo_registry/README.md) | a Hardhat project that registers the official ALU logo as an ERC-721 NFT with its SHA-256 fingerprint, and splits its ownership into 1,000,000 ERC-20 shares |
 
 ## Question 2 in short
@@ -61,5 +58,3 @@ Both contracts are verified on Etherscan: the source code is readable in each co
 | [images/q2_09b_etherscan_distribute.png](images/q2_09b_etherscan_distribute.png) | that transfer on Etherscan |
 | [images/q2_09c_remix_ownership_owner.png](images/q2_09c_remix_ownership_owner.png) | ownershipPercentage of the logo owner: 90 |
 | [images/q2_09d_remix_ownership_recipient.png](images/q2_09d_remix_ownership_recipient.png) | ownershipPercentage of the recipient: 10 |
-
-Screenshots for the exchange report are listed in [q1_exchange_exploration/README.md](q1_exchange_exploration/README.md).
