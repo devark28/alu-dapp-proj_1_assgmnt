@@ -7,3 +7,4 @@ q2_alu_logo_registry/typechain-types/
 q2_alu_logo_registry/deployments/localhost.json
 q2_alu_logo_registry/deployments/hardhat.json
 .env
+*.zip
