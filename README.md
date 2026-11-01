@@ -33,25 +33,33 @@ Deployment to the Sepolia testnet, verification of the source code and use from 
 
 ## Sepolia deployment
 
-| Contract | Address |
+| | Sepolia |
 |---|---|
-| ALUAssetRegistry | `<add after deploying>` |
-| ALULogoToken | `<add after deploying>` |
+| ALUAssetRegistry | [0x9f92D707a21A3212aBCd5Fd22E74A6fEBA19e63f](https://sepolia.etherscan.io/address/0x9f92D707a21A3212aBCd5Fd22E74A6fEBA19e63f) |
+| ALULogoToken | [0xD5B6E32ac49F4dC38F429773b5AA1C49e50CcA75](https://sepolia.etherscan.io/address/0xD5B6E32ac49F4dC38F429773b5AA1C49e50CcA75) |
+| Logo registration (token 1) | [0x1fd1670e63c441deff...](https://sepolia.etherscan.io/tx/0x1fd1670e63c441deff6de9a121d2bc934a3d22db063873314663d949fbf4424a) |
+| Deployer and logo owner | [0xA105E8D690313a5ffad15f807f108a3d011Eb79D](https://sepolia.etherscan.io/address/0xA105E8D690313a5ffad15f807f108a3d011Eb79D) |
 
-The registration transaction and the contracts can be inspected on [sepolia.etherscan.io](https://sepolia.etherscan.io).
+Both contracts are verified on Etherscan: the source code is readable in each contract's Contract tab, and the view functions can be called from Read Contract. The same addresses are in [q2_alu_logo_registry/deployments/sepolia.json](q2_alu_logo_registry/deployments/sepolia.json).
 
 ## Screenshots
 
 | File | Shows |
 |---|---|
 | [images/q2_01_hardhat_node.png](images/q2_01_hardhat_node.png) | the local node and its test wallet addresses |
-| [images/q2_02_logo_hash.png](images/q2_02_logo_hash.png) | the SHA-256 hash of the ALU logo |
+| [images/q2_02a_logo_hash_sha256sum.png](images/q2_02a_logo_hash_sha256sum.png) | the SHA-256 hash of the ALU logo from sha256sum |
+| [images/q2_02b_logo_hash_script.png](images/q2_02b_logo_hash_script.png) | the same hash from scripts/hash-logo.js |
 | [images/q2_03_compile.png](images/q2_03_compile.png) | compiling the contracts |
 | [images/q2_04_tests.png](images/q2_04_tests.png) | the 8 required tests passing |
 | [images/q2_05_deploy_local.png](images/q2_05_deploy_local.png) | deployment and logo registration on the local node |
-| [images/q2_06_deploy_sepolia.png](images/q2_06_deploy_sepolia.png) | deployment on Sepolia |
+| [images/q2_06a_deploy_sepolia.png](images/q2_06a_deploy_sepolia.png) | deployment on Sepolia |
+| [images/q2_06b_sepolia_json.png](images/q2_06b_sepolia_json.png) | the saved Sepolia addresses |
 | [images/q2_07_etherscan.png](images/q2_07_etherscan.png) | the registration transaction on Etherscan |
-| [images/q2_08_remix_verify.png](images/q2_08_remix_verify.png) | verifyLogoIntegrity in Remix, true and false |
-| [images/q2_09_remix_tokens.png](images/q2_09_remix_tokens.png) | distributeShares and ownershipPercentage in Remix |
+| [images/q2_08a_remix_verify_true.png](images/q2_08a_remix_verify_true.png) | verifyLogoIntegrity in Remix on Sepolia with the real hash: true |
+| [images/q2_08b_remix_verify_false.png](images/q2_08b_remix_verify_false.png) | verifyLogoIntegrity in Remix on Sepolia with a wrong hash: false |
+| [images/q2_09a_remix_distribute.png](images/q2_09a_remix_distribute.png) | distributeShares of 100,000 ALUT from Remix on Sepolia |
+| [images/q2_09b_etherscan_distribute.png](images/q2_09b_etherscan_distribute.png) | that transfer on Etherscan |
+| [images/q2_09c_remix_ownership_owner.png](images/q2_09c_remix_ownership_owner.png) | ownershipPercentage of the logo owner: 90 |
+| [images/q2_09d_remix_ownership_recipient.png](images/q2_09d_remix_ownership_recipient.png) | ownershipPercentage of the recipient: 10 |
 
 Screenshots for the exchange report are listed in [q1_exchange_exploration/README.md](q1_exchange_exploration/README.md).
