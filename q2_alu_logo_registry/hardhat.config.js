@@ -21,13 +21,13 @@ module.exports = {
     },
   },
   networks,
-  // Sourcify verification needs no account. Etherscan is used as well once
-  // an API key is set with npx hardhat vars set ETHERSCAN_API_KEY.
+  // Source verification on Etherscan, with a free API key set through
+  // npx hardhat vars set ETHERSCAN_API_KEY. Sourcify is off because the
+  // Hardhat 2 plugin still calls Sourcify's retired v1 API.
   etherscan: {
-    enabled: vars.has("ETHERSCAN_API_KEY"),
     apiKey: vars.get("ETHERSCAN_API_KEY", ""),
   },
   sourcify: {
-    enabled: true,
+    enabled: false,
   },
 };
