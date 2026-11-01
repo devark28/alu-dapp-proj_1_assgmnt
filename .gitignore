@@ -1,0 +1,9 @@
+docs/
+node_modules/
+q2_alu_logo_registry/artifacts/
+q2_alu_logo_registry/cache/
+q2_alu_logo_registry/coverage/
+q2_alu_logo_registry/typechain-types/
+q2_alu_logo_registry/deployments/localhost.json
+q2_alu_logo_registry/deployments/hardhat.json
+.env
